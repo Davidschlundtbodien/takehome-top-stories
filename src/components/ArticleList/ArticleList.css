@@ -27,10 +27,16 @@
   transform: scale(1.05);
 }
 
+.article-list-item > img {
+  height: auto;
+  width: auto;
+}
+
 .article-item-text {
+  margin: .8em;
   width: 80%;
-  padding: 1em;
   display: flex;
   flex-direction: column;
-
+  font-size: .8em;
+  justify-content: space-around;
 }
