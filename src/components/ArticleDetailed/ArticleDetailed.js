@@ -4,7 +4,7 @@ import './ArticleDetailed.css';
 const ArticleDetailed = ({ article }) => {
 
   return(
-    <article className="article-list-container">
+    <article className="article-container">
       <h1>{article.title}</h1>
       <p>{article.abstract}</p>
     </article>

@@ -3,6 +3,7 @@ import './App.css';
 import NavBar from '../NavBar/NavBar';
 import ArticleList from '../ArticleList/ArticleList';
 import ArticleDetailed from '../ArticleDetailed/ArticleDetailed';
+import PageNotFound from '../PageNotFound/PageNotFound';
 import { Switch, Route} from 'react-router-dom';
 import { fetchTopStories } from '../../apiCalls';
 
@@ -32,7 +33,7 @@ const App = () => {
         >
         </Route>
         <Route path="*">
-          // 404 page
+          <PageNotFound/>
         </Route>
       </Switch>
     </div>
