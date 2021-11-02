@@ -7,6 +7,7 @@ const ArticleDetailed = ({ article }) => {
     <article className="article-container">
       <h1>{article.title}</h1>
       <p>{article.abstract}</p>
+      <img src={article.multimedia[0].url}/>
     </article>
   )
 }
