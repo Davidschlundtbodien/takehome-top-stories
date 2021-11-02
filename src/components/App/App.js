@@ -1,11 +1,12 @@
 import React, {useEffect, useState} from 'react';
 import './App.css';
 import NavBar from '../NavBar/NavBar';
+import ArticleList from '../ArticleList/ArticleList';
 import { Switch, Route} from 'react-router-dom';
 import { fetchTopStories } from '../../apiCalls';
 
 const App = () => {
-  const [articles, setArticles] = useState([])
+  const [articles, setArticles] = useState(null)
   const [error, setError] = useState('')
 
   useEffect(() => {
@@ -19,7 +20,7 @@ const App = () => {
       <NavBar />
       <Switch>
         <Route exact path="/">
-          // Index
+          {articles && <ArticleList articles={articles}/>}
         </Route>
         <Route exact path="/article">
           // Detailed
