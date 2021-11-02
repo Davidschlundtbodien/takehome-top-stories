@@ -1,10 +1,14 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Search from '../Search/Search';
 import './ArticleList.css';
 
 const ArticleList = ({ articles }) => {
-  const [filteredArticles, setFilter] = useState(articles)
+  const [filteredArticles, setFilter] = useState([])
+
+  useEffect(() => {
+    setFilter(articles)
+  }, [articles])
 
   const handleSearch = (searchInput) => {
     setFilter(articles.filter(article => article.title.toLowerCase().includes(searchInput.toLowerCase())))

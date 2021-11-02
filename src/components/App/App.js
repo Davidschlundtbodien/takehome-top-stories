@@ -18,25 +18,29 @@ const App = () => {
   }, [])
 
   return (
-    <div className="App">
-      <NavBar />
-      <Switch>
-        <Route exact path="/">
-          {articles && <ArticleList articles={articles}/>}
-        </Route>
-        <Route
-          exact path="/article/:index"
-          render={({match}) => {
-            const i = parseInt(match.params.index)
-            return <ArticleDetailed article={articles[i]} />
-          }}
-        >
-        </Route>
-        <Route path="*">
-          <PageNotFound/>
-        </Route>
-      </Switch>
-    </div>
+    <>
+      {articles &&
+        <div className="App">
+          <NavBar />
+          <Switch>
+            <Route exact path="/">
+              <ArticleList articles={articles}/>
+            </Route>
+            <Route
+              exact path="/article/:index"
+              render={({match}) => {
+                const i = parseInt(match.params.index)
+                return <ArticleDetailed article={articles[i]} />
+              }}
+            >
+            </Route>
+            <Route path="*">
+              <PageNotFound/>
+            </Route>
+          </Switch>
+        </div>
+      }
+    </>
   );
 }
 
