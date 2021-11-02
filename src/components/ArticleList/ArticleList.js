@@ -14,7 +14,7 @@ const ArticleList = ({ articles }) => {
     return (
       <Link to={`/article/${index}`} key={index} className="article-list-item">
         <img src={article.multimedia[2].url}/>
-        <div>
+        <div className="article-item-text">
           <p>{article.title}</p>
           <p>{article.byline}</p>
         </div>
@@ -25,7 +25,9 @@ const ArticleList = ({ articles }) => {
   return(
     <article className="article-list-container">
       <Search handleSearch={handleSearch}/>
-      {articleList}
+      <div className="article-gallery">
+        {articleList}
+      </div>
     </article>
   )
 }
