@@ -4,7 +4,7 @@ import './ArticleList.css';
 const ArticleList = ({ articles }) => {
   const articleList = articles.map((article, index) => {
     return (
-      <Link to={`/article`} key={index} className="article-list-item">
+      <Link to={`/article/${index}`} key={index} className="article-list-item">
         <p>{article.title}</p>
       </Link>
     )
