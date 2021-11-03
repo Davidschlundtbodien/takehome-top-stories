@@ -10,7 +10,7 @@ import { fetchTopStories } from '../../apiCalls';
 const App = () => {
   const [articles, setArticles] = useState([])
   const [error, setError] = useState('')
-  const [subject, setSubject] = useState('home')
+  const [subject, setSubject] = useState('science')
 
   useEffect(() => {
     fetchTopStories(subject)
