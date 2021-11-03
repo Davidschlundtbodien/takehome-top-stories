@@ -37,6 +37,31 @@
   width: 80%;
   display: flex;
   flex-direction: column;
-  font-size: .8em;
   justify-content: space-around;
+  font-style: italic;
+}
+.article-title {
+  font-size: .8em;
+  font-weight: 600;
+}
+.article-author {
+  font-size: .6em;
+  font-weight: 400;
+}
+
+@media (min-width: 768px) {
+  .article-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1440px) {
+  .article-gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (min-width: 2560px) {
+  .article-gallery {
+    padding: 1em 10em;
+    grid-template-columns: repeat(4, 1fr);
+  }
 }

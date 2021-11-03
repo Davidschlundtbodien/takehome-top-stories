@@ -17,15 +17,33 @@
   margin: 1em;
   display: flex;
   flex-direction: column;
-  font-size: 1.8em;
+  font-style: italic;
   border-radius: .4em;
   box-shadow: .17em .15em .2em;
 }
 
+.title {
+  font-size: 1.6em;
+  font-weight: bolder;
+  text-decoration: underline;
+}
+
+.abstract {
+  font-size: 1.4em;
+  font-weight: 500;
+}
+
+.author {
+  font-size: 1em;
+  font-weight: 300;
+}
+
 .article-content > a {
+  font-weight: bolder;
   text-decoration: none;
   color: inherit;
   font-size: 1.4em;
+  font-style: normal;
 }
 
 .article-content > a:hover {

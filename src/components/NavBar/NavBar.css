@@ -1,8 +1,28 @@
 nav {
-  background: lightgrey;
+  padding: 1em;
+  border-bottom: solid .01em;
+  box-shadow: 0 .24em .4em;
 }
 
 .link {
-  text-decoration: none;
+  font-size: 1.7em;
+  font-weight: bolder;
   color: inherit;
+}
+
+.nav-links {
+  margin: .7em;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
+.nav-links > .link {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.3em;
+}
+
+.link:hover {
+  text-decoration: underline;
 }

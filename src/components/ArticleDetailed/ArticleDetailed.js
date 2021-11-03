@@ -8,12 +8,12 @@ const ArticleDetailed = ({ article }) => {
       className="article-container"
       style={{backgroundImage: `url(${article.multimedia[0].url})`}}
     >
-    <section className="article-content">
-      <h1>{article.title}</h1>
-      <p>{article.abstract}</p>
-      <p>{article.byline}</p>
-      <a href={article.url}>Read Article</a>
-    </section>
+      <section className="article-content">
+        <p className="title">{article.title}</p>
+        <p className="abstract">{article.abstract}</p>
+        <p className="author">{article.byline}</p>
+        <a href={article.url}>Read Article</a>
+      </section>
     </article>
   )
 }
