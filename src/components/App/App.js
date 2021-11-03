@@ -10,18 +10,23 @@ import { fetchTopStories } from '../../apiCalls';
 const App = () => {
   const [articles, setArticles] = useState([])
   const [error, setError] = useState('')
+  const [subject, setSubject] = useState('home')
 
   useEffect(() => {
-    fetchTopStories()
+    fetchTopStories(subject)
     .then(data => setArticles(data.results))
     .catch(err => setError(err))
-  }, [])
+  }, [subject])
+
+  const changeSubject = (subjectSelected) => {
+    setSubject(subjectSelected)
+  }
 
   return (
     <>
       {articles &&
         <div className="App">
-          <NavBar />
+          <NavBar changeSubject={changeSubject}/>
           <Switch>
             <Route exact path="/">
               <ArticleList articles={articles}/>
