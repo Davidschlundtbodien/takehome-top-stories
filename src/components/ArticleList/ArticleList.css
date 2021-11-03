@@ -37,8 +37,16 @@
   width: 80%;
   display: flex;
   flex-direction: column;
-  font-size: .8em;
   justify-content: space-around;
+  font-style: italic;
+}
+.article-title {
+  font-size: .8em;
+  font-weight: 600;
+}
+.article-author {
+  font-size: .6em;
+  font-weight: 400;
 }
 
 @media (min-width: 768px) {

@@ -17,10 +17,10 @@ const ArticleList = ({ articles }) => {
   const articleList = filteredArticles.map((article, index) => {
     return (
       <Link to={`/article/${index}`} key={index} className="article-list-item">
-        <img src={article.multimedia[2].url}/>
+        <img src={article.multimedia[2].url} alt="article thumbnail"/>
         <div className="article-item-text">
-          <p>{article.title}</p>
-          <p>{article.byline}</p>
+          <p className="article-title">{article.title}</p>
+          <p className="article-author">{article.byline}</p>
         </div>
       </Link>
     )
