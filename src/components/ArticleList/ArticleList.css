@@ -7,7 +7,7 @@
 }
 
 .article-gallery {
-  padding: 1em;
+  padding: 1em 0;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   grid-gap: 1em;
@@ -52,13 +52,16 @@
 @media (min-width: 768px) {
   .article-gallery {
     grid-template-columns: repeat(2, 1fr);
+    padding: 1em;
   }
 }
+
 @media (min-width: 1440px) {
   .article-gallery {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
 @media (min-width: 2560px) {
   .article-gallery {
     padding: 1em 10em;

@@ -5,13 +5,13 @@ nav {
 }
 
 .link {
-  font-size: 1.7em;
+  font-size: 2em;
   font-weight: bolder;
   color: inherit;
 }
 
 .nav-links {
-  margin: .7em;
+  margin: 1em;
   display: flex;
   justify-content: space-evenly;
 }
@@ -25,4 +25,22 @@ nav {
 
 .link:hover {
   text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+  .nav-links {
+    margin: 1em 15%;
+  }
+}
+
+@media (min-width: 1440px) {
+  .nav-links {
+    margin: 1em 20%;
+  }
+}
+
+@media (min-width: 2560px) {
+  .nav-links {
+    margin: 1em 30%;
+  }
 }
