@@ -1,70 +1,30 @@
-# Getting Started with Create React App
+# Take Home Top Stories
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### [Github Repository](https://github.com/Davidschlundtbodien/takehome-top-stories)
+### [Project Board](https://github.com/Davidschlundtbodien/takehome-top-stories/projects/1)
 
-## Available Scripts
+## Abstract
+ Take Home Top Stories utilizes the [NYT top stories api](https://developer.nytimes.com/docs/top-stories-product/1/overview) to produce a list of top stories of a given subject and upon selecting an article from the list a detailed view is presented as well as an option to read the full story on the NYT site.
+ 
+### Future Additions
+ - Publish dates (formatted with moment JS) for each article
+ - More subject options
 
-In the project directory, you can run:
+### Lighthouse Score
+<img width="170" alt="Screen Shot 2021-11-04 at 11 55 56 AM" src="https://user-images.githubusercontent.com/50115942/140393792-a7d2f79d-e26b-43fc-9114-2cd181fe2546.png">
 
-### `npm start`
+### Setup Instuctions
+- `git clone` this repository
+- `cd` into the repository in your terminal
+- `npm i` to install required dependencies
+- Then `npm start` in your terminal to view it on your browser
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Technologies
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Contributors
+  - [David Schlundt-Bodien](https://github.com/Davidschlundtbodien)
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Project Specs
+  - The project spec & rubric can be found [here](https://mod4.turing.edu/projects/take_home/take_home_fe)
